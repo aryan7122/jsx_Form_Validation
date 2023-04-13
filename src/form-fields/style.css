@@ -1,0 +1,33 @@
+.inputField {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.inputField label {
+    color: rgb(255, 255, 255);
+    min-width: 150px;
+}
+
+.inputField span {
+    font-size: 14px;
+    color: red;
+    display: none;
+}
+
+.inputField input {
+    background: transparent;
+    outline: 0;
+    border: 1px solid rgba(165, 163, 163, 0.527);
+    height: 55px;
+    border-radius: 8px;
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.inputField input:invalid[focused=true] ~ span{
+    color: red;
+    display: block;
+}
